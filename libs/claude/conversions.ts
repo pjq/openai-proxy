@@ -61,11 +61,11 @@ const generatePrompt = (
     }
 
     let prompt: string = "";
-    if (assistant_prompt && '' != assistant_prompt) {
-        prompt = `Tips: ${assistant_prompt} \nPlease refer to the prompts above for your answer (Return the results of the question):\n`
-    }
+    // if (assistant_prompt && '' != assistant_prompt) {
+    //     prompt = `Tips: ${assistant_prompt} \nPlease refer to the prompts above for your answer (Return the results of the question):\n`
+    // }
     prompt += user_prompt;
-    prompt += system_prompt ? `(${system_prompt})` : ''
+    // prompt += system_prompt ? `(${system_prompt})` : ''
     return prompt;
 }
 
